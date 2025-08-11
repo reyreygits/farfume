@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Beli Minyak Wangi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .product-details {
+            display: flex;
+            align-items: center;
+        }
+        .product-info {
+            margin-left: 20px;
+        }
+        .product-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .product-info p {
+            margin: 5px 0;
+            color: gray;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .order-form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .order-form input, .order-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .order-form button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jual Beli Minyak Wangi</h1>
+    <p>Temukan berbagai macam minyak wangi favorit Anda!</p>
+</header>
+
+<div class="container">
+
+    <div class="product-card">
+        <div class="product-details">
+            <img src="https://via.placeholder.com/100" alt="Minyak Wangi 1">
+            <div class="product-info">
+                <h3>Minyak Wangi Mewah</h3>
+                <p>Jenis: Parfum Eropa</p>
+                <p>Kapasitas: 100ml</p>
+                <p>Deskripsi: Parfum dengan aroma bunga yang lembut dan tahan lama.</p>
+                <div class="product-price">Rp 250.000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-details">
+            <img src="https://via.placeholder.com/100" alt="Minyak Wangi 2">
+            <div class="product-info">
+                <h3>Minyak Wangi Fresh</h3>
+                <p>Jenis: Parfum Segar</p>
+                <p>Kapasitas: 50ml</p>
+                <p>Deskripsi: Parfum segar dengan wangi citrus yang menenangkan.</p>
+                <div class="product-price">Rp 150.000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-form">
+        <h2>Pesan Sekarang</h2>
+        <form action="submit_order.php" method="POST">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="product">Pilih Produk</label>
+            <select id="product" name="product" required>
+                <option value="Minyak Wangi Mewah">Minyak Wangi Mewah</option>
+                <option value="Minyak Wangi Fresh">Minyak Wangi Fresh</option>
+            </select>
+
+            <label for="address">Alamat Pengiriman</label>
+            <input type="text" id="address" name="address" placeholder="Masukkan alamat lengkap" required>
+
+            <label for="contact">Nomor Telepon</label>
+            <input type="tel" id="contact" name="contact" placeholder="Masukkan nomor telepon" required>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Jual Beli Minyak Wangi | Semua Hak Cipta Dilindungi</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Beli Minyak Wangi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .product-details {
+            display: flex;
+            align-items: center;
+        }
+        .product-info {
+            margin-left: 20px;
+        }
+        .product-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .product-info p {
+            margin: 5px 0;
+            color: gray;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .order-form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .order-form input, .order-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .order-form button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jual Beli Minyak Wangi</h1>
+    <p>Temukan berbagai macam minyak wangi favorit Anda!</p>
+</header>
+
+<div class="container">
+
+    <div class="product-card">
+        <div class="product-details">
+            <img src="https://via.placeholder.com/100" alt="Minyak Wangi 1">
+            <div class="product-info">
+                <h3>Minyak Wangi Mewah</h3>
+                <p>Jenis: Parfum Eropa</p>
+                <p>Kapasitas: 100ml</p>
+                <p>Deskripsi: Parfum dengan aroma bunga yang lembut dan tahan lama.</p>
+                <div class="product-price">Rp 250.000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-details">
+            <img src="https://via.placeholder.com/100" alt="Minyak Wangi 2">
+            <div class="product-info">
+                <h3>Minyak Wangi Fresh</h3>
+                <p>Jenis: Parfum Segar</p>
+                <p>Kapasitas: 50ml</p>
+                <p>Deskripsi: Parfum segar dengan wangi citrus yang menenangkan.</p>
+                <div class="product-price">Rp 150.000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-form">
+        <h2>Pesan Sekarang</h2>
+        <form action="submit_order.php" method="POST">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="product">Pilih Produk</label>
+            <select id="product" name="product" required>
+                <option value="Minyak Wangi Mewah">Minyak Wangi Mewah</option>
+                <option value="Minyak Wangi Fresh">Minyak Wangi Fresh</option>
+            </select>
+
+            <label for="address">Alamat Pengiriman</label>
+            <input type="text" id="address" name="address" placeholder="Masukkan alamat lengkap" required>
+
+            <label for="contact">Nomor Telepon</label>
+            <input type="tel" id="contact" name="contact" placeholder="Masukkan nomor telepon" required>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Jual Beli Minyak Wangi | Semua Hak Cipta Dilindungi</p>
+</footer>
+
+</body>
+</html>
